@@ -1,0 +1,23 @@
+#!name=lsp
+#!desc=lsp
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1069.png
+
+[MITM]
+hostname = *.bmafdxt.com, *.yxlauhm.com, *.psovzwr.com, *.50*pi.com, *.wmq*api*.com, *.tbrapi.org, *.hichatapi.com, *.longyuandingyi.com, *.zihzot.com, *.snowing.ren, *.vzcnqmr.cn, *beibeini3.cn, *.pili01a.net, *.hhclyjz.cn, *.bhhcdou.cn, *.xuxivwx.cn, *.sdtuxyh.cn, *.kngpdsz.cn, *.sugugaj.cn, *.mqqjrv.com, *.gnikvh.com, *.auhvylo.cn, *.hefeixcx.xyz, *.vsmdboa.cn
+
+[URL Rewrite]
+# all
+^(https?:\/\/)(?!long)([^./]+\.)*(longyuandingyi.com|zihzot.com|snowing.ren|vzcnqmr.cn|beibeini3.cn|pili01a.net|hhclyjz.cn|bhhcdou.cn|xuxivwx.cn|sdtuxyh.cn|kngpdsz.cn|sugugaj.cn|mqqjrv.com|gnikvh.com|auhvylo.cn|hefeixcx.xyz|vsmdboa.cn)(\/.*)? $1long.$3$4 302
+
+[Script]
+# 91短视频
+http-request ^https?:\/\/.*(bmafdxt|yxlauhm|psovzwr).com/pwa.php script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp.js, requires-body=true, timeout=60, tag=lsp
+
+# 50度灰
+http-response ^https?:\/\/.*50.*pi.com/pwa.php/api/(user/userinfo|MvDetail/(detail|xiao_detail)|home/(getOpenAdsAndVersion|appcenter)|system/getad) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp.js, requires-body=true, timeout=60, tag=lsp
+
+# 微密圈
+http-request ^https?:\/\/.*(wmq.*api\d+).com/pwa.php script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp.js, requires-body=true, timeout=60, tag=lsp
+
+# 撸先生
+http-request ^https?:\/\/.*hichatapi.+\/api\.php$ script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp.js, requires-body=true, timeout=60, tag=lsp
