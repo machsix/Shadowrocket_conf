@@ -1,6 +1,7 @@
-#!name=rewrite
-#!desc=rewrite url
-#!icon=https://github.com/Koolson/Qure/blob/master/IconSet/Bypass.png
-# Loon docs: https://nsloon.app/docs/Rewrite/
+#!name = rewrite
+#!desc = rewrite url
+#!icon = https://github.com/Koolson/Qure/blob/master/IconSet/Color/Bypass.png
+#!author = machsix
+
 [URL Rewrite]
-^https?:\/\/(www\.)?jpxgmn\.com https://www.321781.xyz
+^https?:\/\/(www\.)?jpxgmn\.com header https://www.321781.xyz

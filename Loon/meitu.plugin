@@ -1,6 +1,7 @@
 #!name=美图欣赏
 #!desc=多看美图助于身心健康😊
-#!icon=https://github.com/Koolson/Qure/blob/master/IconSet/Want_Want.png
+#!icon=https://github.com/Koolson/Qure/blob/master/IconSet/Color/Want_Want.png
+#!author=machsix
 
 [Script]
 http-request ^https?:\/\/mei\.tu script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/meitu.js, requires-body=true, max-size=-1, timeout=60, tag=meitu
