@@ -68,8 +68,11 @@ if (typeof $request === "undefined") {
   main().finally(() => $.done({}));
 } else {
   (async () => {
-    const body = $.getdata("meitu_html");
-    !body && (await main());
+    let body = $.getdata("meitu_html");
+    if (!body) {
+      await main();
+      body = $.getdata("meitu_html")
+    }
     const response = {
       headers: { "content-type": "text/html" },
       status: $.isQuanX() ? "HTTP/1.1 200 OK" : 200,
