@@ -3,9 +3,9 @@
 #!icon=https://github.com/Koolson/Qure/blob/master/IconSet/Want_Want.png
 
 [Script]
-http-request ^https?:\/\/mei\.tu script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/meitu/meitu.js, requires-body=true, max-size=-1, timeout=60, tag=meitu
+http-request ^https?:\/\/mei\.tu script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/meitu.js, requires-body=true, max-size=-1, timeout=60, tag=meitu
 
-cron "30 20 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/meitu/meitu.js, timeout=120, enable=true
+cron "30 20 * * *" script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/meitu.js, timeout=120, enable=true, tag=美图鉴赏
 
 [MITM]
 hostname = mei.tu
