@@ -1,0 +1,11 @@
+#!name=美图欣赏
+#!desc=多看美图助于身心健康😊
+#!icon=https://github.com/Koolson/Qure/blob/master/IconSet/Want_Want.png
+
+[Script]
+http-request ^https?:\/\/mei\.tu script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/meitu/meitu.js, requires-body=true, max-size=-1, timeout=60, tag=meitu
+
+cron "30 20 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/meitu/meitu.js, timeout=120, enable=true
+
+[MITM]
+hostname = mei.tu
