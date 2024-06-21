@@ -1,0 +1,9 @@
+#!name=Simply Piano
+#!desc=Simply Piano Premium
+#!author=machsix
+#!icon=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/SimplyPiano.png
+[Script]
+http-response ^https?:\/\/alicdn\.joytunescn\.com\/server\/asla\/accounts\/accountAuthenticate requires-body=1,script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/SimplyPiano.js
+http-response ^https?:\/\/asla\.joytunes\.com\/server\/asla\/accounts\/accountAuthenticate requires-body=1,script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/SimplyPiano.js
+[MITM]
+hostname = alicdn.joytunescn.com, asla.joytunes.com
