@@ -1,0 +1,8 @@
+#!name=Ticktick
+#!desc=Ticktick Premium
+#!author=machsix
+#!icon=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/ticktick.png
+[Script]
+http-response ^https?:\/\/ticktick\.com\/api\/v2\/user\/status requires-body=1,script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/ticktick.js
+[MITM]
+hostname = ticktick.com
