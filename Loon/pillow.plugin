@@ -1,0 +1,8 @@
+#!name=Pillow
+#!desc=Pillow 解锁会员
+#!author=machsix
+#!icon=https://b2125997.smushcdn.com/2125997/wp-content/uploads/pillow-icon-v4-rounded.png
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) requires-body=1,script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/pillow.js
+[MITM]
+hostname = api.revenuecat.com
