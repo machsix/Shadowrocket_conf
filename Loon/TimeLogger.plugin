@@ -1,0 +1,9 @@
+#!name=TimeLogger
+#!desc=TimeLogger
+#!author=chxm1023
+#!icon=https://play-lh.googleusercontent.com/SfkqULfA8dozThFvmBtOi6pl1eXNP1ojdCXFa5E416AYwgEsKK80zJZiXunVqA8Pdg=w480-h960
+[Script]
+http-response ^https?:\/\/liujia95\.xyz\/v\d\/user\/(get_user|register) requires-body=1,script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/TimeLogger.js
+
+[MITM]
+hostname = liujia95.xyz
