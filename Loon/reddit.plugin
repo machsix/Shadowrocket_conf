@@ -1,0 +1,15 @@
+#!name=Reddit
+#!desc=Reddit NoAD
+#!author=machsix[https://github.com/machsix]
+#!icon=https://www.redditstatic.com/shreddit/assets/favicon/192x192.png
+
+[Argument]
+quit_experiment = switch,true,tag=Quit Experiment
+debug = switch,false,tag=Debug
+no_nsfw = switch, true, tag=Remove NSFW badge
+
+[Script]
+http-response ^https?:\/\/gql(-fed)?\.reddit\.com script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/reddit.js,requires-body=true,enable=true,argument=[{quit_experiment},{debug},{no_nsfw}]
+
+[MITM]
+hostname = gql.reddit.com, gql-fed.reddit.com

@@ -1,0 +1,12 @@
+#!name=alpine
+#!desc=alpine
+#!author=machsix
+#!icon=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/alpine.jpg
+
+[rewrite]
+^https?:\/\/my\.getslopes\.com\/api\/v2\/account header-del If-Modified-Since If-None-Match
+
+[Script]
+http-response ^https?:\/\/my\.getslopes\.com\/api\/v2\/account$ script-path=https://raw.githubusercontent.com/machsix/Shadowrocket_conf/main/Loon/alpine.js,requires-body=true,enable=true
+[MITM]
+hostname = my.getslopes.com
