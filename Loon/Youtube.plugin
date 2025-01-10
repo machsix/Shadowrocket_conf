@@ -4,7 +4,7 @@
 #!homepage = https://whatshub.top
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 [Argument]
-lyricLang = select,"zh-Hans","en","ja",tag=字幕翻译语言
+lyricLang = select,"zh-Hans","en","ja",tag=歌词翻译语言
 captionLang = select,"zh-Hans","en","ja",tag=字幕翻译语言
 blockUpload = switch,true,tag=屏蔽上传按钮
 blockImmersive = switch,true,tag=屏蔽选段按钮
